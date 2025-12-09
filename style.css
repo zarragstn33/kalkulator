@@ -1,0 +1,84 @@
+/*style.css*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #062238;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.calculator {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(240, 234, 234, 0.2);
+  width: 300px;
+  background-color: #390854;
+  /* Warna gelap */
+  padding: 10px;
+}
+
+.calculator-screen {
+  width: 100%;
+  height: 60px;
+  background-color: #607d8b;
+  /* Warna tampilan */
+  color: #fff;
+  text-align: right;
+  font-size: 2.5rem;
+  padding: 10px;
+  border: none;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.calculator-keys button {
+  height: 60px;
+  border: none;
+  background-color: #eceff1;
+  /* Warna tombol angka */
+  border-radius: 4px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.calculator-keys button:hover {
+  background-color: #cfd8dc;
+}
+
+.operator {
+  background-color: #0870b1 !important;
+  /* Warna tombol operator */
+  color: white;
+}
+
+.operator:hover {
+  background-color: #fb8c00 !important;
+}
+
+.all-clear {
+  background-color: #f44336 !important;
+  /* Warna tombol AC */
+  color: white;
+}
+
+.all-clear:hover {
+  background-color: #e53935 !important;
+}
+
+.equal-sign {
+  grid-column: 4 / 5;
+  /* Posisikan tombol sama dengan di kolom paling kanan */
+  grid-row: 3 / 6;
+  /* Rentang baris yang lebih panjang */
+  height: 100%;
+}
